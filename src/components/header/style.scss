@@ -1,0 +1,38 @@
+@import '../../scss/colors.scss';
+
+.navigation {
+  padding: 40px 130px;
+  transition: .3s ease
+}
+
+.navigation.nav-bg {
+  background-color: $background-primary;
+  padding: 15px 100px
+}
+
+@media(max-width:991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px
+  }
+}
+
+@media(max-width:991px) {
+  .navigation {
+    padding: 20px;
+    background: $background-primary
+  }
+}
+
+.navbar .nav-item .nav-link {
+  font-family: bwnistaint-xbd;
+  text-transform: uppercase;
+  padding: 15px
+}
+
+.navbar .nav-item.active {
+  font-weight: 700
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff
+}

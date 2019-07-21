@@ -1,15 +1,17 @@
 import React from 'react'
 import emergence from 'emergence.js'
 
-import Navi from 'components/navi'
+import Header from 'components/header'
+import Contact from 'components/contact'
 import Footer from 'components/footer'
-import { siteMetadata } from '../../../gatsby-config'
 
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
-import 'scss/gatstrap.scss'
+import 'scss/global.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
+
+import { globalInfo } from '../../globalInfo'
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -22,11 +24,13 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
+    const { siteName } = globalInfo
     return (
       <div>
-        <Navi title={siteMetadata.title} {...this.props} />
+        <Header siteName={siteName} />
         {children}
-        <Footer title={siteMetadata.title} author={siteMetadata.author} />
+        <Contact />
+        <Footer />
       </div>
     )
   }

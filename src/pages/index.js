@@ -2,16 +2,40 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import get from 'lodash/get'
 
-import Post from 'templates/post'
-import Meta from 'components/meta'
 import Layout from 'components/layout'
+import Meta from 'components/meta'
+import Hero from 'components/hero'
+import Intro from 'components/intro'
+import Services from 'components/services'
+import Skills from 'components/skills'
+import Experience from 'components/experience'
+import Projects from 'components/projects'
 
-const BlogIndex = ({ data, location }) => {
+import { globalInfo } from '../globalInfo'
+
+const {
+  heroTitle,
+  introText,
+  services,
+  skills,
+  social,
+  full_time_experiences: fullTime,
+  internship_experiences: internships,
+  projects,
+} = globalInfo
+
+const Home = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
-      {posts.map(({ post }, i) => (
+      <Hero title={heroTitle} social={social} />
+      <Intro content={introText} />
+      <Services services={services} />
+      <Skills skills={skills} />
+      <Experience fullTime={fullTime} internships={internships} />
+      <Projects projects={projects} />
+      {/* {posts.map(({ post }, i) => (
         <Post
           data={post}
           options={{
@@ -19,12 +43,12 @@ const BlogIndex = ({ data, location }) => {
           }}
           key={i}
         />
-      ))}
+      ))} */}
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Home
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -33,9 +57,6 @@ export const pageQuery = graphql`
         title
         description
         url: siteUrl
-        author
-        twitter
-        adsense
       }
     }
     remark: allMarkdownRemark(

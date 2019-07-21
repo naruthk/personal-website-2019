@@ -1,0 +1,647 @@
+@import './colors.scss';
+// @import './constants.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+/*!------------------------------------------------------------------
+Credits: https://github.com/themefisher/kross-hugo-portfolio-template
+
+Note: Kross is originally designed for Hugo template framework. However,
+I've converted it to work with my Gatsby website. Huge thanks to
+Themefisher for the original code!
+-------------------------------------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: bwnistaint-xbd;
+  src: url("../assets/fonts/BwNistaInt-xBd.woff") format("woff");
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body {
+  line-height: 1.2;
+  font-family: "Playfair Display", Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: $text-color;
+}
+
+p {
+  font-weight: 400;
+  color: $text-color;;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: roboto, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-family: playfair display, serif;
+  line-height: 1.2
+}
+
+h1,
+.h1 {
+  font-size: 80px
+}
+
+@media(max-width:991px) {
+
+  h1,
+  .h1 {
+    font-size: 65px
+  }
+}
+
+h2,
+.h2 {
+  font-size: 60px
+}
+
+@media(max-width:991px) {
+  h2,
+  .h2 {
+      font-size: 50px
+    }
+}
+
+h3,
+.h3 {
+  font-size: 40px
+}
+
+h4,
+.h4 {
+  font-size: 22px
+}
+
+h5,
+.h5 {
+  font-size: 18px
+}
+
+h6,
+.h6 {
+  font-size: 14px
+}
+
+.btn {
+  font-size: 22px;
+  font-family: playfair display, serif;
+  text-transform: capitalize;
+  padding: 16px 44px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important
+}
+
+.btn:active {
+  box-shadow: none
+}
+
+.btn-sm {
+  font-size: 15px;
+  padding: 10px 30px
+}
+
+.btn-xs {
+  padding: 5px 10px;
+  font-size: 15px
+}
+
+.btn-primary {
+  background: $background-primary;
+  color: $white
+}
+
+.btn-primary:active {
+  background: $background-primary-lighter !important
+}
+
+.btn-primary:hover {
+  background: $background-primary-lighter
+}
+
+.btn-primary.focus,
+.btn-primary.active {
+  background: $background-primary-lighter !important;
+  box-shadow: none !important
+}
+
+.btn-transparent {
+  background: transparent;
+  color: $background-primary;
+  font-weight: 700
+}
+
+.btn-transparent:active,
+.btn-transparent:hover {
+  color: $background-primary
+}
+
+body {
+  background-color: $white;
+  overflow-x: hidden
+}
+
+::selection {
+  background: $background-primary-lighter;
+  color: $white
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0
+}
+
+img {
+  vertical-align: middle;
+  border: 0
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: .2s ease
+}
+
+a:focus,
+button:focus,
+select:focus {
+  outline: 0
+}
+
+a.text-dark:hover {
+  color: $background-primary !important
+}
+
+a:hover {
+  color: $background-primary
+}
+
+.slick-slide {
+  outline: 0
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-family: bwnistaint-xbd
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat
+}
+
+.overlay {
+  position: relative
+}
+
+.overlay::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: .5
+}
+
+.outline-0 {
+  outline: 0 !important
+}
+
+.d-unset {
+  display: unset !important
+}
+
+.bg-primary {
+  background: $background-primary !important
+}
+
+.bg-gray {
+  background: #eaeaea !important
+}
+
+.text-primary {
+  color: $background-primary !important
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.text-dark {
+  color: #000 !important
+}
+
+.text-light {
+  color: #999 !important
+}
+
+.mb-10 {
+  margin-bottom: 10px !important
+}
+
+.mb-20 {
+  margin-bottom: 20px !important
+}
+
+.mb-30 {
+  margin-bottom: 30px !important
+}
+
+.mb-40 {
+  margin-bottom: 40px !important
+}
+
+.mb-50 {
+  margin-bottom: 50px !important
+}
+
+.mb-60 {
+  margin-bottom: 60px !important
+}
+
+.mb-70 {
+  margin-bottom: 70px !important
+}
+
+.mb-80 {
+  margin-bottom: 80px !important
+}
+
+.mb-90 {
+  margin-bottom: 90px !important
+}
+
+.mb-100 {
+  margin-bottom: 100px !important
+}
+
+.zindex-1 {
+  z-index: 1
+}
+
+.rounded-lg {
+  border-radius: 15px
+}
+
+.overflow-hidden {
+  overflow: hidden
+}
+
+.font-secondary {
+  font-family: playfair display, serif !important
+}
+
+.font-tertiary {
+  font-family: bwnistaint-xbd !important
+}
+
+.shadow {
+  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34) !important
+}
+
+.bg-dark {
+  background-color: #222 !important
+}
+
+.icon {
+  font-size: 45px
+}
+
+.icon-bg {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center
+}
+
+.icon-light {
+  color: #c8d5ef
+}
+
+.slick-dots {
+  text-align: center;
+  padding-left: 0
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 2px
+}
+
+.slick-dots li.slick-active button {
+  background: $white;
+  width: 25px
+}
+
+.slick-dots li button {
+  height: 6px;
+  width: 12px;
+  background: rgba(255, 255, 255, .5);
+  color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s ease;
+  border: 0
+}
+
+.edu-bg-image {
+  position: absolute;
+  left: 0;
+  top: -300px;
+  z-index: -1
+}
+
+.hover-bg-primary {
+  transition: .3s ease
+}
+
+.hover-bg-primary:hover {
+  background: $background-primary
+}
+
+.hover-bg-primary:hover * {
+  color: $white
+}
+
+.active-bg-primary {
+  transition: .3s ease;
+  background: $background-primary
+}
+
+.active-bg-primary * {
+  color: $white
+}
+
+.hover-shadow {
+  transition: .2s ease
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 18px 40px 8px rgba(224, 241, 255, .54) !important
+}
+
+.hover-wrapper {
+  overflow: hidden
+}
+
+.hover-wrapper img {
+  transition: .3s ease;
+  transform: scale(1.1)
+}
+
+.hover-wrapper:hover img {
+  transform: scale(1)
+}
+
+.hover-wrapper:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center
+}
+
+.card-lg {
+  flex-direction: row-reverse;
+  align-items: center
+}
+
+@media(max-width:991px) {
+  .card-lg {
+    flex-direction: column
+  }
+}
+
+blockquote {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #eaeaea;
+  border-left: 2px solid $background-primary;
+  font-style: italic;
+  font-size: 22px
+}
+
+.content * {
+  margin-bottom: 20px
+}
+
+.content strong {
+  font-family: playfair display, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  display: inherit;
+  line-height: 1.5
+}
+
+.page-title-alt {
+  padding: 350px 0 70px
+}
+
+.border-thick {
+  border: 10px solid
+}
+
+.drag-lg-top {
+  margin-top: -230px
+}
+
+@media(max-width:991px) {
+  .drag-lg-top {
+    margin-top: 0
+  }
+}
+
+.page-title-alt .container {
+  position: relative;
+  z-index: 1
+}
+
+.page-title-alt .bg-shape-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%
+}
+
+.page-title-alt .bg-shape-2 {
+  position: absolute;
+  left: 70px;
+  top: 100px
+}
+
+.page-title-alt .bg-shape-3 {
+  position: absolute;
+  left: 30%;
+  top: 50px;
+  transform: rotate(180deg)
+}
+
+.page-title-alt .bg-shape-4 {
+  position: absolute;
+  left: 100px;
+  bottom: 100px
+}
+
+.page-title-alt .bg-shape-5 {
+  position: absolute;
+  left: 40%;
+  bottom: -25px
+}
+
+.page-title-alt .bg-shape-6 {
+  position: absolute;
+  bottom: 100px;
+  right: -100px
+}
+
+.page-title {
+  padding: 250px 0 150px
+}
+
+.page-title .container {
+  position: relative;
+  z-index: 1
+}
+
+.page-title .bg-shape-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%
+}
+
+.page-title .bg-shape-2 {
+  position: absolute;
+  left: -20px;
+  top: -10px
+}
+
+.page-title .bg-shape-3 {
+  position: absolute;
+  left: 10%;
+  top: 100px
+}
+
+.page-title .bg-shape-4 {
+  position: absolute;
+  left: 50%;
+  top: -20px
+}
+
+.page-title .bg-shape-5 {
+  position: absolute;
+  left: 90px;
+  bottom: -50px;
+  transform: rotate(180deg)
+}
+
+.page-title .bg-shape-6 {
+  position: absolute;
+  right: 20%;
+  bottom: -20px
+}
+
+.page-title .bg-shape-7 {
+  position: absolute;
+  right: -220px;
+  bottom: -100px
+}
+
+.filter-controls li {
+  cursor: pointer
+}
+
+.filter-controls li.active {
+  font-weight: 700
+}
+
+.max-width-parent {
+  max-width: 100%;
+}
+
+.form-control {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #c7c7c7;
+  height: 60px
+}
+
+.form-control:focus {
+  border-color: $background-primary;
+  outline: 0;
+  box-shadow: none !important
+}
+
+textarea.form-control {
+  height: 120px
+}

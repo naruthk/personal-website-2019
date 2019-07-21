@@ -1,14 +1,3 @@
-// Colors
-//
-// Grayscale and brand colors for use across Bootstrap.
-
-// Start with assigning color names to specific hex values.
-//
-// Color system
-//
-@import './colors.scss';
-
-// Reassign color vars to semantic color scheme
 $theme-colors: (
   primary: $purple,
   secondary: $gray-600,
@@ -51,40 +40,5 @@ $body-color: $gray-700 !default;
 $inverse-bg: $gray-900 !default;
 $inverse-color: $gray-600 !default;
 
-// Links
-//
-// Style anchor elements.
 $link-decoration: none !default;
 $link-hover-decoration: none !default;
-
-// Fonts
-//
-@import './fonts.scss';
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-img {
-  margin-bottom: 15px;
-  max-width: 100%;
-}
-
-img:hover {
-  animation: pulse 0.5s;
-}

@@ -32,12 +32,12 @@ section {
   }
 
   hr {
-    border-color: $red;
+    border-color: red;
     border-width: 3px;
     max-width: 50px;
 
     &.light {
-      border-color: $white;
+      border-color: #fff;
     }
   }
 

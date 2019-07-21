@@ -7,6 +7,7 @@ import {
   faAws,
   faFacebook,
   faGithub,
+  faLinkedin,
   faHtml5,
   faJs,
   faNode,
@@ -15,13 +16,13 @@ import {
   faTwitter,
   faVuejs,
 } from '@fortawesome/free-brands-svg-icons'
-import './style.scss'
 
 library.add(
   faApple,
   faAws,
   faFacebook,
   faGithub,
+  faLinkedin,
   faHtml5,
   faJs,
   faNode,
@@ -31,10 +32,12 @@ library.add(
   faVuejs
 )
 
-const Icon = ({ name }) => (
-  <div className="icon" title={name}>
-    <FontAwesomeIcon icon={['fab', name]} />
-  </div>
+const Icon = ({ name, size, color }) => (
+  <FontAwesomeIcon
+    icon={['fab', name]}
+    color={color ? color : 'white'}
+    size={size ? size : {}}
+  />
 )
 
 export default Icon

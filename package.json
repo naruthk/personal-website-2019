@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "2.0.1",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "naruth-official-website",
+  "description": "A full-stack developer who designs and builds web and mobile apps with emphasis on producing user-friendly and useful products",
+  "version": "1.0.0",
+  "author": "Naruth Kongurai <nkongurai@gmail.com>",
   "dependencies": {
     "gatsby": "2.13.31",
     "gatsby-image": "2.2.6",

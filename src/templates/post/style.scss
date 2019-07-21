@@ -8,7 +8,7 @@
   .info {
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 1px solid $gray-200;
+    border-bottom: 1px solid #eee;
     word-break: break-word;
 
     h1 {
@@ -21,7 +21,7 @@
 
     time {
       font-size: $font-size-xs;
-      color: $gray-500;
+      color: #ccc;
       display: inline;
       margin-right: 10px;
     }
@@ -40,8 +40,8 @@
     }
 
     blockquote {
-      background-color: $gray-100;
-      border-left: 5px solid $gray-200;
+      background-color: #ccc;
+      border-left: 5px solid #000;
       padding: 0.25em 1.5em;
 
       a {

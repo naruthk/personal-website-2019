@@ -1,9 +1,22 @@
-@import 'scss/colors.scss';
+.footer-section {
+  padding-top: 200px
+}
 
-.footer {
-  hr {
-    border-color: $red;
-    border-width: 3px;
-    max-width: 50px;
-  }
+.section-on-footer {
+  margin-bottom: -250px
+}
+
+.shadow-down {
+  position: relative
+}
+
+.shadow-down::before {
+  position: absolute;
+  content: "";
+  box-shadow: 0 0 80.75px 14.25px rgba(224, 241, 255, .34);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1
 }
