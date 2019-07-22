@@ -1,21 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-import Icon from '../icon'
+import Social from '../social';
 
-import './style.scss'
+import './style.scss';
 
 const Footer = () => (
   <footer className="bg-dark footer-section">
     <div className="text-center py-5">
-      {/* <a href="#" title="twitter" target="_blank"> */}
-      <Icon name="twitter" size="2x" />
-      {/* </a> */}
+      <Social isFooter />
     </div>
     <div className="text-center py-5">
       <p className="mb-0 text-light">
         &copy; 2019 | Naruth Kongurai
         <br />
-        Built using Gatsby.js & React. Original design by{' '}
+        Created using Gatsby and React. Modified the design originally created
+        by{' '}
         <a
           href="https://themefisher.com/best-hugo-themes"
           target="_blank"
@@ -26,6 +25,6 @@ const Footer = () => (
       </p>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

@@ -72,13 +72,13 @@ h1,
 
   h1,
   .h1 {
-    font-size: 65px
+    font-size: 55px
   }
 }
 
 h2,
 .h2 {
-  font-size: 60px
+  font-size: 40px
 }
 
 @media(max-width:991px) {
@@ -351,6 +351,10 @@ a:hover {
 
 .bg-dark {
   background-color: #222 !important
+}
+
+.bg-dot {
+  background-image: url("../assets/images/bg-dots.png");
 }
 
 .icon {

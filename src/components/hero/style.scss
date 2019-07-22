@@ -5,14 +5,21 @@
 
 @media(max-width:767px) {
   .hero-area {
-    padding: 200px 0 150px;
+    padding: 200px 30px;
+    // padding: 200px 0 150px;
     overflow: hidden
   }
 }
 
 .hero-area h1 {
   position: relative;
-  z-index: 2
+  z-index: 2;
+
+  @media(max-width:767px) {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
 }
 
 .layer {
@@ -65,8 +72,72 @@
   right: -10px
 }
 
+#l3, #l5 {
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite;
+}
+
+#l3 {
+  -webkit-animation-name: l3animation; /* Safari 4.0 - 8.0 */
+  animation-name: l3animation;
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-duration: 6s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes l3animation {
+  0%   {top: 200px; left: 40%; }
+  50%  {top: 220px; left: 30%; }
+  100% {top: 200px; left: 40%; }
+}
+
+/* Standard syntax */
+@keyframes l3animation {
+  0%   {top: 200px; left: 40%; }
+  50%  {top: 220px; left: 30%; }
+  100% {top: 200px; left: 40%; }
+}
+
+
+#l5 {
+  -webkit-animation-name: l5animation; /* Safari 4.0 - 8.0 */
+  animation-name: l5animation;
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-duration: 8s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes l5animation {
+  0%   {top: 100px; right: -150px; }
+  50%  {top: 150px; right: -100px; }
+  100% {top: 100px; right: -150px; }
+}
+
+/* Standard syntax */
+@keyframes l5animation {
+  0%   {top: 100px; right: -150px; }
+  50%  {top: 150px; right: -100px; }
+  100% {top: 100px; right: -150px; }
+}
+
 .layer-bg {
   position: absolute;
   bottom: 0;
   left: 0
+}
+
+.animated-pulsing {
+  animation: pulse 5s infinite;
+  padding: 5px 10px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #fff;
+    color: black;
+  }
+  100% {
+    background-color: pink;
+    color: black;
+  }
 }

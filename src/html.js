@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default class HTML extends React.Component {
   render() {
@@ -25,22 +25,12 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          {/* <script
+          <script
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          /> */}
+          />
         </body>
-        {/* <script>
-          {window.scroll(function() {
-            let navigation = document.getElementsByClassName('navigation')[0]
-            if (navigation.offSetTop > 100) {
-              navigation.classList.add('nav-bg')
-            } else {
-              navigation.classList.remove('nav-bg')
-            }
-          })}
-        </script> */}
       </html>
-    )
+    );
   }
 }

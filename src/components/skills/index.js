@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 
-import './style.scss'
+import './style.scss';
 
 const displaySpecificSkill = skill => {
-  const { title, percentage, backgroundColor } = skill
+  const { title, percentage, backgroundColor } = skill;
   return (
     <div className="col-lg-3 col-sm-6 mb-4" key={title}>
       <div className="card shadow text-center">
@@ -18,11 +18,11 @@ const displaySpecificSkill = skill => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Skills = props => (
-  <section className="section">
+  <section className="section bg-dot">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -32,6 +32,6 @@ const Skills = props => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Skills
+export default Skills;

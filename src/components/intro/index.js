@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import avatar from '../../assets/images/me.png'
+import './style.scss';
+
+import avatar from '../../assets/images/me.png';
 
 const Intro = props => (
   <section className="section pt-5">
@@ -14,13 +16,13 @@ const Intro = props => (
             <img
               src={avatar}
               alt="author"
-              className="img-fluid w-100 rounded-lg border-thick border-white"
+              className="profile-photo img-fluid w-100 rounded-lg border-thick border-white"
             />
           </div>
         </div>
       </div>
     </div>
   </section>
-)
+);
 
-export default Intro
+export default Intro;

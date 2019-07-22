@@ -1,6 +1,6 @@
 export const globalInfo = {
   siteName: 'Naruth Kongurai',
-  heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web<br/>Developer.",
+  heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web Developer",
   introText:
     'I specialize in web development using technologies such as React, Node.js, Express.js, Next.js, Gatsby.js, and Google Analytics. Outside of development, I love traveling, watching sci-fi films, eating tasty food, and playing soccer.',
   currentCompany: 'True Digital Group',
@@ -273,4 +273,4 @@ export const globalInfo = {
         'A rating app used by more than 9000 7-Eleven convenience stores in Thailand. Built for Android.',
     },
   ],
-}
+};
