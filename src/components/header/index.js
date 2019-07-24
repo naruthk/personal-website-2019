@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import './style.scss'
+import { Link } from 'gatsby';
+import React from 'react';
+import './style.scss';
 
 const Header = props => (
   <header className="navigation fixed-top nav-bg">
@@ -46,6 +46,6 @@ const Header = props => (
       </div> */}
     </nav>
   </header>
-)
+);
 
-export default Header
+export default Header;

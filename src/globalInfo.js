@@ -2,7 +2,7 @@ export const globalInfo = {
   siteName: 'Naruth Kongurai',
   heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web Developer",
   introText:
-    'I specialize in web development using technologies such as React, Node.js, Express.js, Next.js, Gatsby.js, and Google Analytics. Outside of development, I love traveling, watching sci-fi films, eating tasty food, and playing soccer.',
+    'I specialize in web development using technologies such as React, Node.js, Express.js, Next.js, Gatsby.js, and Google Analytics. Aside from coding, I love traveling, watching sci-fi films, eating tasty food, and playing soccer.',
   currentCompany: 'True Digital Group',
   social: [
     {
@@ -24,18 +24,21 @@ export const globalInfo = {
       content:
         'Express.js for running Node.js. Integration with Google services (Cloud Platform, Firebase), Amazon Web Services',
       isFeatured: false,
+      icons: ['node', 'php', 'aws', 'docker'],
     },
     {
       title: 'Crafting awesome front-end apps',
       content:
         'Next.js / Gatsby.js / Wordpress. Prefer using React with ES6 and Prettier set up. Google Analytics & Tag Manager, Cloudinary (image optimization)',
       isFeatured: true,
+      icons: ['react', 'js', 'html5', 'wordpress'],
     },
     {
       title: 'Designing low- & high-fidelity prototypes',
       content:
         'Sketch, InVision, Figma, Adobe XD, and Zeplin (because we all know how awesome Zeplin is)',
       isFeatured: false,
+      icons: ['figma', 'invision'],
     },
     // {
     //   title: 'Other areas of involvements and experience',
@@ -262,15 +265,15 @@ export const globalInfo = {
     //   description:
     //     'A note-taking app for iOS boasting a minimalistic look and user-friendly interface. Built using Swift.',
     // },
-    {
-      created: '2016',
-      projectName: 'DC Vote App',
-      platform: 'Android Application',
-      technologies: 'Java, Android Studio',
-      link: '#',
-      cloudinaryImageUrl: 'projects/dc-vote-app',
-      description:
-        'A rating app used by more than 9000 7-Eleven convenience stores in Thailand. Built for Android.',
-    },
+    // {
+    //   created: '2016',
+    //   projectName: 'DC Vote App',
+    //   platform: 'Android Application',
+    //   technologies: 'Java, Android Studio',
+    //   link: '#',
+    //   cloudinaryImageUrl: 'projects/dc-vote-app',
+    //   description:
+    //     'A rating app used by more than 9000 7-Eleven convenience stores in Thailand. Built for Android.',
+    // },
   ],
-};
+}

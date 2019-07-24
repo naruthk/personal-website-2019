@@ -1,10 +1,10 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from 'react';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
 const Meta = ({ site, title }) => {
-  const siteTitle = get(site, 'title')
-  title = title ? `${title} | ${siteTitle}` : siteTitle
+  const siteTitle = get(site, 'title');
+  title = title ? `${title} | ${siteTitle}` : siteTitle;
   return (
     <Helmet
       title={title}
@@ -30,6 +30,6 @@ const Meta = ({ site, title }) => {
         },
       ]}
     />
-  )
-}
-export default Meta
+  );
+};
+export default Meta;

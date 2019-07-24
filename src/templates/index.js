@@ -1,11 +1,11 @@
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import React from 'react'
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
+import React from 'react';
 
-import Post from 'templates/post'
-import Meta from 'components/meta'
-import Layout from 'components/layout'
-import Page from 'templates/page'
+import Post from 'templates/post';
+import Meta from 'components/meta';
+import Layout from 'components/layout';
+import Page from 'templates/page';
 
 const Template = ({ data, location }) => (
   <div>
@@ -27,8 +27,8 @@ const Template = ({ data, location }) => (
       )}
     </Layout>
   </div>
-)
-export default Template
+);
+export default Template;
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {
@@ -60,4 +60,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

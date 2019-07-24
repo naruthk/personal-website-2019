@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import planPhoto from '../../assets/images/plan.png'
+import Icon from '../icon';
 
-import './style.scss'
+import './style.scss';
 
 const displaySpecificService = process => (
   <div className="col-md-4 mb-4" key={process.title}>
@@ -11,14 +11,25 @@ const displaySpecificService = process => (
         `active-bg-primary`}`}
     >
       <div className="card-body text-center px-4 py-5">
-        <img src={planPhoto} alt="icon" className="mb-5 d-inline-block" />
-        {/* <i className="fa-facebook mb-5 d-inline-block"></i> */}
+        <div className="mb-5 d-inline-block">
+          {process.icons.map(item => {
+            return (
+              <span className="px-2 py-5 mb-5">
+                <Icon
+                  name={item}
+                  size="2x"
+                  color={process.isFeatured ? 'black' : {}}
+                />
+              </span>
+            );
+          })}
+        </div>
         <h4 className="mb-4">{process.title}</h4>
         <p>{process.content}</p>
       </div>
     </div>
   </div>
-)
+);
 
 const Services = props => (
   <section className="section">
@@ -31,6 +42,6 @@ const Services = props => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Services
+export default Services;

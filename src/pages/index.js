@@ -1,17 +1,17 @@
-import { graphql } from 'gatsby'
-import React from 'react'
-import get from 'lodash/get'
+import { graphql } from 'gatsby';
+import React from 'react';
+import get from 'lodash/get';
 
-import Layout from 'components/layout'
-import Meta from 'components/meta'
-import Hero from 'components/hero'
-import Intro from 'components/intro'
-import Services from 'components/services'
-import Skills from 'components/skills'
-import Experience from 'components/experience'
-import Projects from 'components/projects'
+import Layout from 'components/layout';
+import Meta from 'components/meta';
+import Hero from 'components/hero';
+import Intro from 'components/intro';
+import Services from 'components/services';
+import Skills from 'components/skills';
+import Experience from 'components/experience';
+import Projects from 'components/projects';
 
-import { globalInfo } from '../globalInfo'
+import { globalInfo } from '../globalInfo';
 
 const {
   heroTitle,
@@ -22,10 +22,10 @@ const {
   full_time_experiences: fullTime,
   internship_experiences: internships,
   projects,
-} = globalInfo
+} = globalInfo;
 
 const Home = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
+  const posts = get(data, 'remark.posts');
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
@@ -35,20 +35,11 @@ const Home = ({ data, location }) => {
       <Skills skills={skills} />
       <Experience fullTime={fullTime} internships={internships} />
       <Projects projects={projects} />
-      {/* {posts.map(({ post }, i) => (
-        <Post
-          data={post}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))} */}
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -85,4 +76,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

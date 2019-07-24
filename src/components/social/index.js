@@ -19,23 +19,23 @@ const Social = props => {
     <div>
       <ul className="list-inline m-30">
         <li className="list-inline-item">
-          {SocialIconWithLink({ name: 'twitter', url: { twitterUrl } })}
+          {SocialIconWithLink({ name: 'twitter', url: twitterUrl })}
         </li>
         <li className="list-inline-item">
-          {SocialIconWithLink({ name: 'linkedin', url: { linkedinUrl } })}
+          {SocialIconWithLink({ name: 'linkedin', url: linkedinUrl })}
         </li>
         <li className="list-inline-item">
-          {SocialIconWithLink({ name: 'github', url: { githubUrl } })}
+          {SocialIconWithLink({ name: 'github', url: githubUrl })}
         </li>
       </ul>
     </div>
   ) : (
     <ul className="social-list list-unstyled position-relative ml-5 mt-3 zindex-1">
       <li className="mb-3">
-        {SocialIconWithLink({ name: 'twitter', url: { twitterUrl } })}
+        {SocialIconWithLink({ name: 'twitter', url: twitterUrl })}
       </li>
       <li className="mb-3">
-        {SocialIconWithLink({ name: 'linkedin', url: { linkedinUrl } })}
+        {SocialIconWithLink({ name: 'linkedin', url: linkedinUrl })}
       </li>
       <li className="mb-3">
         {SocialIconWithLink({ name: 'github', url: { githubUrl } })}

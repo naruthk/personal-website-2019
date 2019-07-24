@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 
 import Social from '../social';
 
-import leafBg from '../../assets/images/leaf-bg.svg';
 import dotsGroupOrange from '../../assets/images/dots-group-orange.svg';
 import dotsOrange from '../../assets/images/dots-orange.svg';
 import leafCyan2 from '../../assets/images/leaf-cyan-2.svg';
@@ -15,9 +14,6 @@ import './style.scss';
 
 const renderLeafs = () => (
   <Fragment>
-    {/* <div className="layer-bg w-100">
-      <img className="img-fluid w-100" src={leafBg} alt="bg-shape" />
-    </div> */}
     <div className="layer" id="l2">
       <img src={leafCyan} alt="bg-shape" />
     </div>
@@ -53,7 +49,6 @@ const Hero = props => (
           <h1 className="text-white font-tertiary">
             Hi! I'm <span className="animated-pulsing">Naruth</span>, a Full
             Stack Web Developer
-            {/* <div dangerouslySetInnerHTML={{ __html: props.title }} /> */}
           </h1>
         </div>
       </div>

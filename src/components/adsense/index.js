@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 class Adsense extends React.Component {
   componentDidMount() {
-    const { clientId } = this.props
+    const { clientId } = this.props;
     if (clientId) {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }
 
   render() {
-    const { clientId, slotId, format } = this.props
+    const { clientId, slotId, format } = this.props;
 
     return clientId ? (
       <div className="ad">
@@ -23,7 +23,7 @@ class Adsense extends React.Component {
       </div>
     ) : (
       ''
-    )
+    );
   }
 }
-export default Adsense
+export default Adsense;

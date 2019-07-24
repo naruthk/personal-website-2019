@@ -1,7 +1,7 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import './style.scss';
 
 const Page = ({ data }) => (
   <div dangerouslySetInnerHTML={{ __html: data.post.html }} />
-)
-export default Page
+);
+export default Page;

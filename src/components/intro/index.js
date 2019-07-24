@@ -9,7 +9,7 @@ const Intro = props => (
     <div className="container">
       <div className="row">
         <div className="col-md-8 mx-auto text-center">
-          <p className="font-secondary lead text-dark">{props.content}</p>
+          <p className="lead text-dark">{props.content}</p>
         </div>
         <div className="col-md-4 text-center drag-lg-top">
           <div className="shadow-down mb-4">

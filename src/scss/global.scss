@@ -1,5 +1,4 @@
 @import './colors.scss';
-// @import './constants.scss';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 /*!------------------------------------------------------------------
@@ -38,7 +37,7 @@ body {
 
 body {
   line-height: 1.2;
-  font-family: "Playfair Display", Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; // "Playfair Display", 
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: $text-color;
@@ -49,7 +48,7 @@ p {
   color: $text-color;;
   font-size: 15px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  font-family: Oxygen, sans-serif
 }
 
 h1,
@@ -59,7 +58,7 @@ h4,
 h5,
 h6 {
   color: $heading-color;
-  font-family: playfair display, serif;
+  // font-family: playfair display, serif;
   line-height: 1.2
 }
 
@@ -431,47 +430,7 @@ a:hover {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 18px 40px 8px rgba(224, 241, 255, .54) !important
-}
-
-.hover-wrapper {
-  overflow: hidden
-}
-
-.hover-wrapper img {
-  transition: .3s ease;
-  transform: scale(1.1)
-}
-
-.hover-wrapper:hover img {
-  transform: scale(1)
-}
-
-.hover-wrapper:hover .hover-overlay {
-  opacity: 1;
-  visibility: visible
-}
-
-.hover-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .3);
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s ease
-}
-
-.hover-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center
+  box-shadow: 0 18px 40px 8px $hover-shadow-color !important
 }
 
 .card-lg {

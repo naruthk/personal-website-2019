@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import './style.scss'
+import './style.scss';
 
 const displaySpecificExperience = experience => (
   <div
@@ -16,7 +16,7 @@ const displaySpecificExperience = experience => (
     <h4>{experience.position}</h4>
     <h6 className="text-light mb-40 font-tertiary">{experience.companyName}</h6>
   </div>
-)
+);
 
 const Experience = props => (
   <section className="section experience">
@@ -30,6 +30,6 @@ const Experience = props => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Experience
+export default Experience;

@@ -13,7 +13,7 @@ const Footer = () => (
       <p className="mb-0 text-light">
         &copy; 2019 | Naruth Kongurai
         <br />
-        Created using Gatsby and React. Modified the design originally created
+        Developed using Gatsby and React. Modified the design originally created
         by{' '}
         <a
           href="https://themefisher.com/best-hugo-themes"
