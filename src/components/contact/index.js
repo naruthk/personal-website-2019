@@ -26,6 +26,7 @@ const Contact = () => (
               netlify
               className="row"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div className="col-md-6">
                 <input
                   type="text"
