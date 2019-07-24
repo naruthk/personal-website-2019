@@ -9,8 +9,8 @@ const Footer = () => (
     <div className="text-center py-5">
       <Social isFooter />
     </div>
-    <div className="text-center py-5">
-      <p className="mb-0 text-light">
+    <div className="text-center py-5 px-4">
+      <p className="mb-5 text-light">
         &copy; 2019 | Naruth Kongurai
         <br />
         Developed using Gatsby and React. Modified the design originally created
