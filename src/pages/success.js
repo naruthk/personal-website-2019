@@ -5,43 +5,37 @@ import get from 'lodash/get';
 import Layout from 'components/layout';
 import Meta from 'components/meta';
 import Hero from 'components/hero';
-import Intro from 'components/intro';
-import Services from 'components/services';
-import Skills from 'components/skills';
-import Experience from 'components/experience';
-import Projects from 'components/projects';
 
 import { globalInfo } from '../globalInfo';
 
-const {
-  heroTitle,
-  introText,
-  services,
-  skills,
-  social,
-  full_time_experiences: fullTime,
-  internship_experiences: internships,
-  projects,
-} = globalInfo;
+const { heroTitle, social } = globalInfo;
 
-const Home = ({ data, location }) => {
+const ContactFormSuccess = ({ data, location }) => {
   return (
-    <Layout location={location}>
+    <Layout location={location} hideContactFormSection>
       <Meta site={get(data, 'site.meta')} />
       <Hero title={heroTitle} social={social} />
-      <Intro content={introText} />
-      <Services services={services} />
-      <Skills skills={skills} />
-      <Experience fullTime={fullTime} internships={internships} />
-      <Projects projects={projects} />
+      <section className="section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h2 className="section-title">Form Submitted</h2>
+              <p>
+                Thank you so much! I'll make sure to get back to you as soon as
+                possible!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
 
-export default Home;
+export default ContactFormSuccess;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query ContactFormSuccessPageQuery {
     site {
       meta: siteMetadata {
         title

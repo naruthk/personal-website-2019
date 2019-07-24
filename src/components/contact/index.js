@@ -20,7 +20,10 @@ const Contact = () => (
             <form
               name="contact"
               method="POST"
+              action="/success"
               data-netlify="true"
+              data-netlify-recaptcha="true"
+              netlify
               className="row"
             >
               <div className="col-md-6">
@@ -48,6 +51,9 @@ const Contact = () => (
                   className="form-control px-0 mb-4"
                   placeholder="Your inquiry message goes here"
                 ></textarea>
+              </div>
+              <div className="col-lg-12 col-12 mx-auto">
+                <div data-netlify-recaptcha="true"></div>
               </div>
               <div className="col-lg-6 col-10 mx-auto">
                 <button className="btn btn-primary w-100 font-tertiary">

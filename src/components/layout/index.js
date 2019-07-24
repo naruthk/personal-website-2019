@@ -23,13 +23,14 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, hideContactFormSection } = this.props;
+    const hideContactSection = hideContactFormSection || false;
     const { siteName } = globalInfo;
     return (
       <div>
         <Header siteName={siteName} />
         {children}
-        <Contact />
+        {!hideContactSection && <Contact />}
         <Footer />
       </div>
     );
