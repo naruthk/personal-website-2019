@@ -1,8 +1,9 @@
-$text-color: #495057 !default;
+// Overall aspect of the site
+$font-color: #495057 !default;
 $heading-color: #000 !default;
-$white: #fff !default;
-
-$background-primary: #03a9f4 !default; // #41228e
-$background-primary-lighter: #90B82C !default; // #0273f4
-
-$hover-shadow-color: #cce6fc; // rgba(224, 241, 255, .54)
+$background-primary-color: #03a9f4 !default;
+$background-secondary-color: #90B82C !default;
+$background-dark-color: #042f4b !default;
+$hover-shadow-color: #cce6fc;
+$mouse-selection-background-color: #fff6da;
+$mouse-selection-text-color: #000;

@@ -24,8 +24,7 @@ const {
   projects,
 } = globalInfo;
 
-const Home = ({ data, location }) => {
-  return (
+const Home = ({ data, location }) => (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
       <Hero title={heroTitle} social={social} />
@@ -36,7 +35,6 @@ const Home = ({ data, location }) => {
       <Projects projects={projects} />
     </Layout>
   );
-};
 
 export default Home;
 

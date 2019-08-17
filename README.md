@@ -14,6 +14,7 @@ Modified from [Gatstrap's Gatsby Starter Template](https://github.com/jaxx2104/g
 - **Netlify** for automatic deployment
 - **GraphQL** for database lookup
 - **Cloudinary** for image optimization
+- **Google Analytics** for tracking views and users
 
 ## Usage
 

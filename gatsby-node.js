@@ -1,9 +1,9 @@
-const each = require('lodash/each')
-const path = require('path')
-const PostTemplate = path.resolve('./src/templates/index.js')
+const each = require('lodash/each');
+const path = require('path');
+const PostTemplate = path.resolve('./src/templates/index.js');
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -30,36 +30,36 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(({ errors, data }) => {
         if (errors) {
-          console.log(errors)
-          reject(errors)
+          console.log(errors);
+          reject(errors);
         }
 
         // Create blog posts & pages.
-        const items = data.allFile.edges
-        const posts = items.filter(({ node }) => /posts/.test(node.name))
+        const items = data.allFile.edges;
+        const posts = items.filter(({ node }) => /posts/.test(node.name));
         each(posts, ({ node }) => {
-          if (!node.remark) return
-          const { path } = node.remark.frontmatter
+          if (!node.remark) return;
+          const { path } = node.remark.frontmatter;
           createPage({
             path,
             component: PostTemplate,
-          })
-        })
+          });
+        });
 
-        const pages = items.filter(({ node }) => /page/.test(node.name))
+        const pages = items.filter(({ node }) => /page/.test(node.name));
         each(pages, ({ node }) => {
-          if (!node.remark) return
-          const { name } = path.parse(node.path)
-          const PageTemplate = path.resolve(node.path)
+          if (!node.remark) return;
+          const { name } = path.parse(node.path);
+          const PageTemplate = path.resolve(node.path);
           createPage({
             path: name,
             component: PageTemplate,
-          })
-        })
+          });
+        });
       })
-    )
-  })
-}
+    );
+  });
+};
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -70,5 +70,5 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         scss: path.resolve(__dirname, 'src/scss'),
       },
     },
-  })
-}
+  });
+};

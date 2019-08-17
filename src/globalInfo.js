@@ -2,7 +2,7 @@ export const globalInfo = {
   siteName: 'Naruth Kongurai',
   heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web Developer",
   introText:
-    'I specialize in web development using technologies such as React, Node.js, Express.js, Next.js, Gatsby.js, and Google Analytics. Aside from coding, I love traveling, watching sci-fi films, eating tasty food, and playing soccer.',
+    'I specialize in developing web applications using React, Node, Express, Next, Gatsby, and Google Analytics. Other than programming, I enjoy traveling, watching movies, dining out with friends and family, and playing soccer. I am a massive supporter of Liverpool Football Club.',
   currentCompany: 'True Digital Group',
   social: [
     {
@@ -276,4 +276,4 @@ export const globalInfo = {
     //     'A rating app used by more than 9000 7-Eleven convenience stores in Thailand. Built for Android.',
     // },
   ],
-}
+};

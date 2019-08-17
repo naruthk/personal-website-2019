@@ -6,7 +6,7 @@
 }
 
 .navigation.nav-bg {
-  background-color: $background-primary;
+  // background-color: $background-dark-color;
   padding: 15px 100px
 }
 
@@ -19,14 +19,18 @@
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background: $background-primary
+    // background: $background-dark-color;
   }
 }
 
 .navbar .nav-item .nav-link {
   font-family: bwnistaint-xbd;
   text-transform: uppercase;
-  padding: 15px
+  padding: 15px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
 }
 
 .navbar .nav-item.active {
@@ -34,5 +38,5 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff
+  color: #fff !important;
 }

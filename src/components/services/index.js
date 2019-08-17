@@ -6,10 +6,7 @@ import './style.scss';
 
 const displaySpecificService = process => (
   <div className="col-md-4 mb-4" key={process.title}>
-    <div
-      className={`card hover-shadow shadow ${process.isFeatured &&
-        `active-bg-primary`}`}
-    >
+    <div className={`card shadow ${process.isFeatured && `active-bg-primary`}`}>
       <div className="card-body text-center px-4 py-5">
         <div className="mb-5 d-inline-block">
           {process.icons.map(item => {

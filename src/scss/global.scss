@@ -2,11 +2,7 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 /*!------------------------------------------------------------------
-Credits: https://github.com/themefisher/kross-hugo-portfolio-template
-
-Note: Kross is originally designed for Hugo template framework. However,
-I've converted it to work with my Gatsby website. Huge thanks to
-Themefisher for the original code!
+Original Author: https://github.com/themefisher/kross-hugo-portfolio-template
 -------------------------------------------------------------------*/
 
 html,
@@ -37,15 +33,15 @@ body {
 
 body {
   line-height: 1.2;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; // "Playfair Display", 
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: $text-color;
+  color: $font-color;
 }
 
 p {
   font-weight: 400;
-  color: $text-color;;
+  color: $font-color;;
   font-size: 15px;
   line-height: 1.8;
   font-family: Oxygen, sans-serif
@@ -58,7 +54,6 @@ h4,
 h5,
 h6 {
   color: $heading-color;
-  // font-family: playfair display, serif;
   line-height: 1.2
 }
 
@@ -140,43 +135,43 @@ h6,
 }
 
 .btn-primary {
-  background: $background-primary;
-  color: $white
+  background: $background-primary-color;
+  color: #fff
 }
 
 .btn-primary:active {
-  background: $background-primary-lighter !important
+  background: $background-secondary-color !important
 }
 
 .btn-primary:hover {
-  background: $background-primary-lighter
+  background: $background-secondary-color
 }
 
 .btn-primary.focus,
 .btn-primary.active {
-  background: $background-primary-lighter !important;
+  background: $background-secondary-color !important;
   box-shadow: none !important
 }
 
 .btn-transparent {
   background: transparent;
-  color: $background-primary;
+  color: $background-primary-color;
   font-weight: 700
 }
 
 .btn-transparent:active,
 .btn-transparent:hover {
-  color: $background-primary
+  color: $background-primary-color
 }
 
 body {
-  background-color: $white;
+  background-color: #fff;
   overflow-x: hidden
 }
 
 ::selection {
-  background: $background-primary-lighter;
-  color: $white
+  background: $mouse-selection-background-color;
+  color: $mouse-selection-text-color;
 }
 
 ol,
@@ -209,12 +204,25 @@ select:focus {
   outline: 0
 }
 
+a.text-light {
+  color: #fff !important;
+}
+
+a.text-light:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+a.bold {
+  font-weight: bolder;
+}
+
 a.text-dark:hover {
-  color: $background-primary !important
+  color: $background-primary-color !important
 }
 
 a:hover {
-  color: $background-primary
+  color: $background-primary-color
 }
 
 .slick-slide {
@@ -261,7 +269,7 @@ a:hover {
 }
 
 .bg-primary {
-  background: $background-primary !important
+  background: $background-primary-color !important
 }
 
 .bg-gray {
@@ -269,11 +277,11 @@ a:hover {
 }
 
 .text-primary {
-  color: $background-primary !important
+  color: $background-primary-color !important
 }
 
 .text-color {
-  color: $text-color;
+  color: $font-color;
 }
 
 .text-dark {
@@ -349,11 +357,11 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #222 !important
+  background-color: $background-dark-color !important
 }
 
 .bg-dot {
-  background-image: url("../assets/images/bg-dots.png");
+  background-image: url("../assets/images/bg-sticky.png");
 }
 
 .icon {
@@ -382,7 +390,7 @@ a:hover {
 }
 
 .slick-dots li.slick-active button {
-  background: $white;
+  background: #fff;
   width: 25px
 }
 
@@ -409,20 +417,20 @@ a:hover {
 }
 
 .hover-bg-primary:hover {
-  background: $background-primary
+  background: $background-primary-color;
 }
 
 .hover-bg-primary:hover * {
-  color: $white
+  color: #fff
 }
 
 .active-bg-primary {
   transition: .3s ease;
-  background: $background-primary
+  background: $background-secondary-color;
 }
 
 .active-bg-primary * {
-  color: $white
+  color: #fff
 }
 
 .hover-shadow {
@@ -448,7 +456,7 @@ blockquote {
   display: inline-block;
   padding: 10px 20px;
   background: #eaeaea;
-  border-left: 2px solid $background-primary;
+  border-left: 2px solid $background-primary-color;
   font-style: italic;
   font-size: 22px
 }
@@ -475,7 +483,7 @@ blockquote {
 }
 
 .drag-lg-top {
-  margin-top: -230px
+  margin-top: -150px
 }
 
 @media(max-width:991px) {
@@ -600,7 +608,7 @@ blockquote {
 }
 
 .form-control:focus {
-  border-color: $background-primary;
+  border-color: $background-primary-color;
   outline: 0;
   box-shadow: none !important
 }

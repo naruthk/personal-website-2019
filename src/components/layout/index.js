@@ -28,7 +28,7 @@ class Layout extends React.Component {
     const { siteName } = globalInfo;
     return (
       <div>
-        <Header siteName={siteName} />
+        {/* <Header siteName={siteName} /> */}
         {children}
         {!hideContactSection && <Contact />}
         <Footer />

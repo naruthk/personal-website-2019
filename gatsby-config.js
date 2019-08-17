@@ -1,13 +1,48 @@
+const title = 'Naruth Kongurai';
+const description =
+  'Full Stack Web Developer building awesome web apps using React and Node.js';
+const homepageUrl = 'https://www.naruth.com';
+
 module.exports = {
   siteMetadata: {
-    title: 'Naruth Kongurai',
-    description:
-      'Full Stack Web Developer building awesome web apps using React and Node.js',
-    siteUrl: 'https://www.naruth.com',
-    author: 'Naruth Kongurai',
+    title,
+    description,
+    siteUrl: homepageUrl,
+    author: title,
   },
   pathPrefix: '/',
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: title,
+        short_name: 'naruth-kongurai',
+        description,
+        homepage_url: homepageUrl,
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#03a9f4',
+        display: 'standalone',
+        icons: [
+          {
+            src: '/img/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/img/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-125314045-1',
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -47,31 +82,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#673ab7',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/img/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: '',
@@ -94,4 +104,4 @@ module.exports = {
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp',
   ],
-}
+};

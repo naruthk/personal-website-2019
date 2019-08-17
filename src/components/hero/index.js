@@ -17,9 +17,9 @@ const renderLeafs = () => (
     <div className="layer" id="l2">
       <img src={leafCyan} alt="bg-shape" />
     </div>
-    <div className="layer" id="l3">
+    {/* <div className="layer" id="l3">
       <img src={leafOrange} alt="bg-shape" />
-    </div>
+    </div> */}
     <div className="layer" id="l4">
       <img src={dotsOrange} alt="bg-shape" />
     </div>
@@ -36,17 +36,17 @@ const renderLeafs = () => (
       <img src={leafPinkRound} alt="bg-shape" />
     </div>
     <div className="layer" id="l9">
-      <img src={leafCyan2} alt="bg-shape" />
+      <img src={leafOrange} alt="bg-shape" />
     </div>
   </Fragment>
 );
 
 const Hero = props => (
-  <section className="hero-area bg-primary" id="parallax">
+  <section className="hero-area " id="parallax">
     <div className="container">
       <div className="row">
         <div className="col-lg-11 mx-auto">
-          <h1 className="text-white font-tertiary">
+          <h1 className=" font-tertiary">
             Hi! I'm <span className="animated-pulsing">Naruth</span>, a Full
             Stack Web Developer
           </h1>

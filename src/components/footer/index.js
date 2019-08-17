@@ -13,15 +13,16 @@ const Footer = () => (
       <p className="mb-5 text-light">
         &copy; 2019 | Naruth Kongurai
         <br />
-        Developed using Gatsby and React. Modified the design originally created
-        by{' '}
+        View the source code on{' '}
         <a
-          href="https://themefisher.com/best-hugo-themes"
+          href="https://www.github.com/naruthk"
           target="_blank"
-          title="Themefisher"
+          title="Naruth GitHub"
+          className="text-light bold"
         >
-          Themefisher
+          Github
         </a>
+        . Developed using Gatsby and React.
       </p>
     </div>
   </footer>
