@@ -10,7 +10,7 @@ const Meta = ({ site, title, description }) => {
       title={title}
       meta={[
         { name: 'twitter:card', content: 'summary' },
-        { name: 'description', content: description }
+        { name: 'description', content: description },
         {
           name: 'twitter:site',
           content: `@${get(site, 'twitter')}`,
