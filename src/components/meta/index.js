@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
-const Meta = ({ site, title }) => {
+const Meta = ({ site, title, description }) => {
   const siteTitle = get(site, 'title');
   title = title ? `${title} | ${siteTitle}` : siteTitle;
   return (
@@ -10,6 +10,7 @@ const Meta = ({ site, title }) => {
       title={title}
       meta={[
         { name: 'twitter:card', content: 'summary' },
+        { name: 'description', content: description }
         {
           name: 'twitter:site',
           content: `@${get(site, 'twitter')}`,
