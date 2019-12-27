@@ -1,32 +1,32 @@
 import React from 'react';
 
+import MaxWidth from '../ui/MaxWidth';
+import Button from '../ui/Button';
+
 import './style.scss';
 
-import avatar from '../../assets/images/me.png';
-
-const profileImageSection = () => (
-  <div className="col-md-4 text-center drag-lg-top">
-    <div className="shadow-down mb-4">
-      <img
-        src={avatar}
-        alt="author"
-        className="profile-photo img-fluid w-100 rounded-lg border-thick border-white shadow"
-      />
-    </div>
-  </div>
-);
-
 const Intro = props => (
-  <section className="section pt-5">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-8 mx-auto text-center">
-          <p className="lead text-dark">{props.content}</p>
-        </div>
-        {profileImageSection()}
-      </div>
+  <MaxWidth className="Intro">
+    <h2 className="Intro__greeting">Hello! 🚀</h2>
+    <h1 className="Intro__heading">
+      I'm Naruth Kongurai.
+      <br />I create things for the web.
+    </h1>
+    <h3 className="Intro__subheading">{props.subheading}</h3>
+    <div className="Intro__call-to-action">
+      <a
+        class="Link Link--is-button Intro__button"
+        href="mailto:nkongurai@gmail.com"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <Button
+          className="Button Button--size-xl Button--shape-rounded"
+          message={'Get in touch'}
+        />
+      </a>
     </div>
-  </section>
+  </MaxWidth>
 );
 
 export default Intro;

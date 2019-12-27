@@ -4,7 +4,6 @@ import get from 'lodash/get';
 
 import Layout from 'components/layout';
 import Meta from 'components/meta';
-import Hero from 'components/hero';
 import Intro from 'components/intro';
 import Services from 'components/services';
 import Skills from 'components/skills';
@@ -14,27 +13,24 @@ import Projects from 'components/projects';
 import { globalInfo } from '../globalInfo';
 
 const {
-  heroTitle,
   introText,
   services,
   skills,
-  social,
   full_time_experiences: fullTime,
   internship_experiences: internships,
   projects,
 } = globalInfo;
 
 const Home = ({ data, location }) => (
-    <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
-      <Hero title={heroTitle} social={social} />
-      <Intro content={introText} />
-      <Services services={services} />
-      <Skills skills={skills} />
-      <Experience fullTime={fullTime} internships={internships} />
-      <Projects projects={projects} />
-    </Layout>
-  );
+  <Layout location={location}>
+    <Meta site={get(data, 'site.meta')} />
+    <Intro subheading={introText} />
+    <Projects projects={projects} />
+    <Services services={services} />
+    <Skills skills={skills} />
+    {/* <Experience fullTime={fullTime} internships={internships} /> */}
+  </Layout>
+);
 
 export default Home;
 

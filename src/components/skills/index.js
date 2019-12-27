@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MaxWidth from '../ui/MaxWidth';
+
 import './style.scss';
 
 const displaySpecificSkill = skill => {
@@ -22,16 +24,16 @@ const displaySpecificSkill = skill => {
 };
 
 const Skills = props => (
-  <section className="section bg-dot">
+  <MaxWidth>
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className="section-title">Skills</h2>
+          <h2>Skills</h2>
         </div>
         {props.skills.map(displaySpecificSkill)}
       </div>
     </div>
-  </section>
+  </MaxWidth>
 );
 
 export default Skills;

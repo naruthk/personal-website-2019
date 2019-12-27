@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MaxWidth from '../ui/MaxWidth';
+
 import './style.scss';
 
 const displaySpecificExperience = experience => (
@@ -8,28 +10,26 @@ const displaySpecificExperience = experience => (
     key={experience.cloudinaryImageUrl}
   >
     <img
-      className="max-width-parent mb-10"
+      className="max-width-parent"
       src={`https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${experience.cloudinaryImageUrl}.png`}
       alt="icon"
     />
-    <p className="mb-0">{experience.duration}</p>
+    <p>{experience.duration}</p>
     <h4>{experience.position}</h4>
-    <h6 className="text-light mb-40 font-tertiary">{experience.companyName}</h6>
+    <h6>{experience.companyName}</h6>
   </div>
 );
 
 const Experience = props => (
-  <section className="section experience">
+  <MaxWidth className="Experience">
+    <h2>Work Experience</h2>
     <div className="container">
       <div className="row justify-content-around">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-title">Experience</h2>
-        </div>
         {props.fullTime.map(displaySpecificExperience)}
-        {props.internships.map(displaySpecificExperience)}
+        {/* {props.internships.map(displaySpecificExperience)} */}
       </div>
     </div>
-  </section>
+  </MaxWidth>
 );
 
 export default Experience;

@@ -1,22 +1,32 @@
-.footer-section {
-  padding-top: 200px
-}
+.Footer {
+  &__contact-information {
+    margin-bottom: 20px;
+  }
 
-.section-on-footer {
-  margin-bottom: -250px
-}
+  &__call-to-action {
+    &--heading {
+      margin-bottom: 30px;
+    }
+  }
 
-.shadow-down {
-  position: relative
-}
+  &__contact-information {
+    margin-top: 20px;
+  }
 
-.shadow-down::before {
-  position: absolute;
-  content: "";
-  box-shadow: 0 0 80.75px 14.25px rgba(224, 241, 255, .34);
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1
+  &__label {
+    &--uppercase {
+      text-transform: uppercase;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+    &--highlight {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: 50px;
+  }
 }

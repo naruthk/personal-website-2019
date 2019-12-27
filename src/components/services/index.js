@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MaxWidth from '../ui/MaxWidth';
 import Icon from '../icon';
 
 import './style.scss';
@@ -29,16 +30,16 @@ const displaySpecificService = process => (
 );
 
 const Services = props => (
-  <section className="section">
+  <MaxWidth>
     <div className="container">
       <div className="row">
         <div className="col-12 text-center">
-          <h2 className="section-title">Services</h2>
+          <h2>Services</h2>
         </div>
         {props.services.map(displaySpecificService)}
       </div>
     </div>
-  </section>
+  </MaxWidth>
 );
 
 export default Services;

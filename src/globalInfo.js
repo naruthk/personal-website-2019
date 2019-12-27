@@ -2,7 +2,7 @@ export const globalInfo = {
   siteName: 'Naruth Kongurai',
   heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web Developer",
   introText:
-    'I specialize in developing web applications using React, Node, Express, Next, Gatsby, and Google Analytics. Other than programming, I enjoy traveling, watching movies, dining out with friends and family, and playing soccer. I am a massive supporter of Liverpool Football Club.',
+    "I'm a full stack website developer specializing in building web apps that are super awesome for customers ❤️ and carefully developed with passion and care 🤹‍♂️.",
   currentCompany: 'True Digital Group',
   social: [
     {
@@ -208,7 +208,7 @@ export const globalInfo = {
       created: '2018 - Current',
       projectName: 'Movies Finder',
       platform: 'Open-Source Application',
-      technologies: 'React, Bootstrap, HTML5, RESTful APIs',
+      technologies: ['React', 'Bootstrap', 'HTML5', 'RESTful APIs'],
       link: 'https://movies-finder-app.herokuapp.com/',
       cloudinaryImageUrl: 'projects/movies-finder-app',
       description:
@@ -218,7 +218,7 @@ export const globalInfo = {
       created: '2017',
       projectName: 'SHOW DC Mall',
       platform: 'Web Application',
-      technologies: 'SiteCore CMS, JavaScript, Bootstrap, CSS3',
+      technologies: ['SiteCore CMS', 'JavaScript', 'Bootstrap', 'CSS3'],
       link: 'https://www.showdc.co.th',
       cloudinaryImageUrl: 'projects/show-dc-web',
       description:
@@ -228,7 +228,7 @@ export const globalInfo = {
       created: '2017',
       projectName: 'Nivea Thailand Website',
       platform: 'Web Application',
-      technologies: 'SiteCore CMS, JavaScript, Bootstrap, CSS3',
+      technologies: ['SiteCore CMS', 'JavaScript', 'Bootstrap', 'CSS3'],
       link: 'https://www.nivea.co.th',
       cloudinaryImageUrl: 'projects/nivea-thailand-web',
       description:
@@ -238,7 +238,7 @@ export const globalInfo = {
       created: '2017',
       projectName: 'Digital Clock Extension',
       platform: 'Google Chrome Extension',
-      technologies: 'JavaScript, CSS',
+      technologies: ['JavaScript', 'CSS'],
       link:
         'https://chrome.google.com/webstore/detail/beautiful-digital-clock-w/jdnjafgehddcpoahelddbflpmoeinaed',
       cloudinaryImageUrl: 'projects/digital-clock-extension',
@@ -249,7 +249,7 @@ export const globalInfo = {
       created: '2017',
       projectName: 'Portfolio HTML5 Template',
       platform: 'Open-Source Web Application',
-      technologies: 'HTML5, JavaScript, CSS3, Bootstrap',
+      technologies: ['HTML5', 'JavaScript', 'CSS3', 'Bootstrap'],
       link: 'https://github.com/naruthk/web-theme-portfolio',
       cloudinaryImageUrl: 'projects/portfolio-template-web',
       description:

@@ -1,0 +1,23 @@
+.Button {
+  color: #5393fe;
+  background: #fff;
+  border: 2px solid #73abff;
+  box-shadow: 0 14px 49px rgba(0,0,0,.07);
+  font-weight: 600;
+
+  margin: 20px 10px 10px 0;
+
+  &--size-normal {
+    font-size: 1em;
+    padding: 1.1em 3em;
+  }
+
+  &--size-xl {
+    font-size: 1.35em;
+    padding: 1.1em 3em;
+  }
+
+  &--shape-rounded {
+    border-radius: 5px;
+  }
+}

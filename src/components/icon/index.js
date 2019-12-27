@@ -1,6 +1,7 @@
+import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import React from 'react';
 
 import {
   faAws,
@@ -34,12 +35,8 @@ library.add(
   faInvision
 );
 
-const Icon = ({ name, size, color }) => (
-  <FontAwesomeIcon
-    icon={['fab', name]}
-    color={color ? color : 'white'}
-    size={size ? size : {}}
-  />
+const Icon = ({ name, size = '2x', color = '' }) => (
+  <FontAwesomeIcon icon={['fab', name]} color={color} size={size} />
 );
 
 export default Icon;

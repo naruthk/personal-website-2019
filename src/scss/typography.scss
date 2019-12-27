@@ -1,0 +1,65 @@
+@import './colors.scss';
+
+@font-face {
+  font-family: bwnistaint-xbd;
+  src: url("../assets/fonts/BwNistaInt-xBd.woff") format("woff");
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.2;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: $font-color;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: $font-color;
+  line-height: 1.8;
+  font-family: Oxygen, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.8em;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 3em
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
