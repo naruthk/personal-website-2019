@@ -1,11 +1,25 @@
+@import '../../scss/colors.scss';
+
 .Button {
-  color: #5393fe;
-  background: #fff;
-  border: 2px solid #73abff;
+  position: relative;
+  z-index: 2;
+
   box-shadow: 0 14px 49px rgba(0,0,0,.07);
   font-weight: 600;
-
+  display: inline-block;
   margin: 20px 10px 10px 0;
+
+  &--primary {
+    color: $white;
+    background: $button-primary-color;
+    border: 2px solid $button-primary-color;
+  }
+
+  &--secondary {
+    color: $white;
+    background: $button-secondary-color;
+    border: 2px solid $button-secondary-color;
+  }
 
   &--size-normal {
     font-size: 1em;

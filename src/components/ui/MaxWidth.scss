@@ -1,17 +1,16 @@
 .max-width {
-  padding: 3em 1em 1em 9em;
   position: relative
 }
 
-@media (max-width:767px) {
+@media (min-width: 767px) {
   .max-width {
-    overflow: hidden
+    padding: 3em 1em 1em 9em;
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .max-width {
-    padding: 4em 1em;
+    padding: 1.3em 0;
     overflow: hidden
   }
 }

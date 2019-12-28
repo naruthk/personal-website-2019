@@ -38,25 +38,25 @@ const Link = ({
       />
     </GatsbyLink>
   )
-}
+};
 
 Link.propTypes = {
   to: PropTypes.string,
   buttonProps: PropTypes.object,
   isButton: PropTypes.bool,
   doOpenInNewTab: PropTypes.bool,
-}
+};
 
 Link.defaultProps = {
   buttonProps: {},
   isButton: false,
   doOpenInNewTab: false,
-}
+};
 
-export default Link
+export default Link;
 
 const LinkChildren = ({ buttonProps, isButton, children }) => (
   isButton ? (
     <Button {...buttonProps}>{children}</Button>
   ) : (children)
-)
+);

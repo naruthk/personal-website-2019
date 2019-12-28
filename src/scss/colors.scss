@@ -1,9 +1,26 @@
-// Overall aspect of the site
-$font-color: #495057 !default;
-$heading-color: #000 !default;
-$background-primary-color: #03a9f4 !default;
-$background-secondary-color: #90B82C !default;
-$background-dark-color: #042f4b !default;
-$hover-shadow-color: #cce6fc;
-$mouse-selection-background-color: #fff6da;
-$mouse-selection-text-color: #000;
+$gray: #495057;
+$dark-gray: #042f4b;
+$light-green: #90B82C;
+$white: #fff;
+$light-aqua: #cce6fc;
+$aqua: #03a9f4;
+$light-yellow: #fff6da;
+$black: #000;
+
+// FONTS
+$font-color: $gray !default;
+$heading-color: $black !default;
+
+// BACKGROUND
+$background-primary-color: $aqua !default;
+$background-secondary-color: $light-green !default;
+$background-dark-color: $dark-gray !default;
+
+// MOUSE & SELECTION
+$hover-shadow-color: $light-aqua !default;
+$mouse-selection-background-color: $light-yellow !default;
+$mouse-selection-text-color: $black !default;
+
+// BUTTONS
+$button-primary-color: $aqua;
+$button-secondary-color: $light-green;

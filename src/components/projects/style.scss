@@ -1,6 +1,23 @@
+@import '../../scss/colors.scss';
+
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 710px,
+  xl: 780px,
+) !default;
+
 .Projects {
   &__container {
+    position: relative;
     margin-bottom: 50px;
+    z-index: 2;
+
+    &--vibrant {
+      &:nth-child(odd) {
+        background: $mouse-selection-background-color;
+      }
+    }
     
     &--box-shadow {
       box-shadow: 0 1.5rem 5rem rgba(0,0,0,.15);
@@ -14,7 +31,17 @@
     &__content {
       &__item {
         &__overview {
-          padding: 3rem !important;
+          padding: 1rem !important;
+          
+          &:hover {
+            h2 {
+              color: $light-green;
+            }
+          }
+
+          @media (min-width: 600px) {
+            padding: 3rem !important;
+          }
 
           h2 {
             margin-bottom: 0.7em;
@@ -29,9 +56,10 @@
             margin: 0 auto;
             max-height: 300px;
           }
-          @media (min-width: 600px) {
+          @media (min-width: 800px) {
             img {
               max-height: 50vh;
+              display: none;
             }
           }
         }
@@ -39,7 +67,7 @@
     }
 
     &__labels {
-      margin: 2.5em 0;
+      margin: 2.5em 0 1em 0;
     }
 
     &__label {
@@ -52,6 +80,7 @@
       &--split {
         margin-right: 20px;
         display: inline-block;
+        font-weight: 300;
       }
     }
   }

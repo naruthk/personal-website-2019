@@ -1,20 +1,70 @@
 $intro-margin-bottom: 0.7em;
 
 .Intro {
+  position: relative;
+
   &__greeting, &__heading, &__subheading {
     margin: $intro-margin-bottom auto;
+    position: relative;
+    z-index: 2;
   }
 
   &__heading {
     letter-spacing: -0.03em;
   }
 
-  &__subheading {
-    font-weight: 400;
-    color: #444;
-  }
-
   &__call-to-action {
     margin-top: 3em;
   }
+}
+
+.layer {
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+#l1 {
+  bottom: 0;
+  left: 0;
+}
+
+#l2 {
+  top: 190px;
+  left: -250px;
+}
+
+#l3 {
+  top: 200px;
+  left: 40%;
+}
+
+#l4 {
+  top: 100px;
+  right: 40%;
+}
+
+#l5 {
+  top: 100px;
+  right: 150px;
+}
+
+#l6 {
+  bottom: -20px;
+  left: 10%;
+}
+
+#l7 {
+  bottom: 100px;
+  left: 20%
+}
+
+#l8 {
+  bottom: 130px;
+  right: 45%;
+}
+
+#l9 {
+  bottom: 250px;
+  right: 10px;
 }
