@@ -1,18 +1,18 @@
 .Footer {
   margin-top: 100px;
 
-  &__contact-information {
-    margin-bottom: 20px;
-  }
-
   &__call-to-action {
     &--heading {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+    }
+    &--illustration {
+      height: 200px;
+      background: url(../../assets/images/bg-desk.svg) left / cover no-repeat;
     }
   }
 
   &__contact-information {
-    margin-top: 20px;
+    margin: 30px 0 20px 0;
   }
 
   &__label {
