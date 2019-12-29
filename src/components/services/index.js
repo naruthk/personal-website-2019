@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MaxWidth from '../ui/MaxWidth';
-import Leafs from '../Leafs';
+import Leafs from '../leafs';
 import Icon from '../icon';
 
 import './style.scss';

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import MaxWidth from '../ui/MaxWidth';
-import Leafs from '../Leafs';
+import Leafs from '../leafs';
 import Button from '../ui/Button';
 import Link from '../links';
 
