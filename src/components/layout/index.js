@@ -1,5 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
-import emergence from 'emergence.js';
+import React, { Fragment } from 'react';
 
 import Social from 'components/social';
 import Footer from 'components/footer';
@@ -11,10 +10,6 @@ import 'font-awesome/css/font-awesome.css';
 import 'scss/global.scss';
 
 const Layout = props => {
-  useEffect(() => {
-    emergence.init();
-  }, []);
-
   const { children, social } = props;
 
   return (

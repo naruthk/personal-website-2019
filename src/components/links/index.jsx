@@ -1,11 +1,11 @@
 // Credit: Amelia Wattenberger (github.com/wattenberger)
 
-import React from "react";
-import PropTypes from "prop-types";
-import { Link as GatsbyLink } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link as GatsbyLink } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-import "./style.scss";
+import './style.scss';
 
 const Link = ({
   to,
@@ -14,28 +14,26 @@ const Link = ({
   doOpenInNewTab,
   className,
   children,
-  ...props 
+  ...props
 }) => {
-  const isExternal = !to || !to.startsWith("/")
+  const isExternal = !to || !to.startsWith('/');
 
-  if (isExternal) return (
-    <OutboundLink
-      className={className}
-      href={to}
-      target={doOpenInNewTab ? "_blank" : ""}
-      rel={doOpenInNewTab ? "noreferrer noopener" : ""}
-      {...props}>
-      <LinkChildren
-        {...{ buttonProps, isButton, children }}
-      />
-    </OutboundLink>
-  )
+  if (isExternal)
+    return (
+      <OutboundLink
+        className={className}
+        href={to}
+        target={doOpenInNewTab ? '_blank' : ''}
+        rel={doOpenInNewTab ? 'noreferrer noopener' : ''}
+        {...props}
+      >
+        <LinkChildren {...{ buttonProps, isButton, children }} />
+      </OutboundLink>
+    );
 
   return (
     <GatsbyLink to={to} className={className} {...props}>
-      <LinkChildren
-          {...{ buttonProps, isButton, children }}
-      />
+      <LinkChildren {...{ buttonProps, isButton, children }} />
     </GatsbyLink>
   )
 };
@@ -55,8 +53,5 @@ Link.defaultProps = {
 
 export default Link;
 
-const LinkChildren = ({ buttonProps, isButton, children }) => (
-  isButton ? (
-    <Button {...buttonProps}>{children}</Button>
-  ) : (children)
-);
+const LinkChildren = ({ buttonProps, isButton, children }) =>
+  isButton ? <Button {...buttonProps}>{children}</Button> : children;

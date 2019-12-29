@@ -1,7 +1,6 @@
 import React from 'react';
 
 import MaxWidth from '../ui/MaxWidth';
-import Button from '../ui/Button';
 import Link from '../links';
 
 import './style.scss';
@@ -25,6 +24,9 @@ const displaySpecificProject = project => {
     technologies,
     link,
   } = project;
+
+  const optimzedImageUrl = `https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${cloudinaryImageUrl}.png`;
+
   return (
     <div
       className="Projects__container Projects__container--box-shadow"
@@ -67,15 +69,12 @@ const displaySpecificProject = project => {
               col-lg-6
               no-padding"
               style={{
-                backgroundImage: `
-                  url(https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${cloudinaryImageUrl}.png)`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'left',
+                background: `
+                  url(${optimzedImageUrl}) left / cover no-repeat`,
               }}
             >
               <img
-                src={`https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${project.cloudinaryImageUrl}.png`}
+                src={optimzedImageUrl}
                 className="img-fluid"
                 alt="portfolio-image"
               />

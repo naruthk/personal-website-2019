@@ -1,23 +1,10 @@
 @import './colors.scss';
 @import './constants.scss';
 
-@font-face {
-  font-family: bwnistaint-xbd;
-  src: url("../assets/fonts/BwNistaInt-xBd.woff") format("woff");
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2') format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700&display=swap');
 
 body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Oxygen, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: $global-page-line-height;
   font-size: $global-font-size;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +12,8 @@ body {
 }
 
 p {
-  font-family: Oxygen, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: -1px; // for better readability
   font-weight: $paragraph-font-weight;
   font-size: $paragraph-font-size;
   line-height: $paragraph-line-height;

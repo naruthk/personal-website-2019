@@ -8,10 +8,12 @@ const displayCompanies = company => {
   const { companyName, position, duration, cloudinaryImageUrl } = company;
   return (
     <div className="col-sm-6 col-md-6 col-lg-3 text-center" key={companyName}>
-      <img
+      <div
         className="Companies__company-thumbnail"
-        src={`https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${cloudinaryImageUrl}.png`}
-        alt="icon"
+        style={{
+          background: `
+            url(https://res.cloudinary.com/naruthk/image/upload/q_80,c_scale,dpr_auto/naruthk.com/${cloudinaryImageUrl}.png) center / contain no-repeat`,
+        }}
       />
       <div className="Companies__description">
         <p className="Companies__description--subheading">

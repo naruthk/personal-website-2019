@@ -6,7 +6,6 @@ import Layout from 'components/layout';
 import Meta from 'components/meta';
 import Intro from 'components/intro';
 import Services from 'components/services';
-import Skills from 'components/skills';
 import Companies from 'components/companies';
 import Projects from 'components/projects';
 
