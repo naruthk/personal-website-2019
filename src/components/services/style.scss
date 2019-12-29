@@ -1,11 +1,15 @@
-.card {
-  border: 0
-}
+@import '../../scss//colors.scss';
 
-.card-header {
-  border: 0
-}
+.Services {
+  &__card {
+    border: 0;
+    position: relative;
+    z-index: 3;
 
-.card-footer {
-  border: 0
+    background: rgba($color: $white, $alpha: 0.7);
+
+    &--active {
+      background: $yellow;
+    }
+  }
 }

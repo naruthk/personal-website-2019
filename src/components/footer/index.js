@@ -1,31 +1,39 @@
 import React from 'react';
 
-import Social from '../social';
+import MaxWidth from '../ui/MaxWidth';
+import Link from '../links';
 
 import './style.scss';
 
 const Footer = () => (
-  <footer className="bg-dark footer-section">
-    <div className="text-center py-5">
-      <Social isFooter />
+  <MaxWidth className="Footer">
+    <div className="container">
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-lg-6">
+          <h2 className="Footer__call-to-action--heading">
+            Let's get in touch
+          </h2>
+        </div>
+        <div className="col-xs-12 col-sm-12 col-lg-6">
+          <p className="Footer__label Footer__label--uppercase">Say Hi</p>
+          <Link to={'mailto:nkongurai@gmail.com'}>
+            <p className="Footer__label Footer__label--highlight">
+              nkongurai@gmail.com
+            </p>
+          </Link>
+          <p className="Footer__label Footer__label--uppercase">GitHub</p>
+          <Link to={'https://www.github.com/naruthk'} doOpenInNewTab>
+            <p className="Footer__label Footer__label--highlight">
+              github.com/naruthk
+            </p>
+          </Link>
+        </div>
+      </div>
     </div>
-    <div className="text-center py-5 px-4">
-      <p className="mb-5 text-light">
-        &copy; 2019 | Naruth Kongurai
-        <br />
-        View the source code on{' '}
-        <a
-          href="https://www.github.com/naruthk"
-          target="_blank"
-          title="Naruth GitHub"
-          className="text-light bold"
-        >
-          Github
-        </a>
-        . Developed using Gatsby and React.
-      </p>
+    <div className="Footer__copyright">
+      <p>&copy; 2020 — Designed and developed by Naruth Kongurai</p>
     </div>
-  </footer>
+  </MaxWidth>
 );
 
 export default Footer;

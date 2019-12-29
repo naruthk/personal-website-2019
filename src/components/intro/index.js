@@ -1,32 +1,39 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import MaxWidth from '../ui/MaxWidth';
+import Leafs from '../Leafs';
+import Button from '../ui/Button';
+import Link from '../links';
 
 import './style.scss';
 
-import avatar from '../../assets/images/me.png';
+const Intro = props => {
+  const { hero, description, mailTo } = props.introduction;
 
-const profileImageSection = () => (
-  <div className="col-md-4 text-center drag-lg-top">
-    <div className="shadow-down mb-4">
-      <img
-        src={avatar}
-        alt="author"
-        className="profile-photo img-fluid w-100 rounded-lg border-thick border-white shadow"
-      />
-    </div>
-  </div>
-);
-
-const Intro = props => (
-  <section className="section pt-5">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-8 mx-auto text-center">
-          <p className="lead text-dark">{props.content}</p>
+  return (
+    <Fragment>
+      <MaxWidth className="Intro">
+        <h2 className="Intro__greeting">Hello! 🚀</h2>
+        <h1
+          className="Intro__heading"
+          dangerouslySetInnerHTML={{ __html: hero }}
+        />
+        <h3 className="Intro__subheading text-lighter">{description}</h3>
+        <div className="Intro__call-to-action">
+          <Link
+            className="Link Link--is-button Intro__button"
+            to={`mailto:${mailTo}`}
+          >
+            <Button
+              className="Button Button--primary Button--size-xl Button--shape-rounded Button--box-shadow"
+              message={'Get in touch'}
+            />
+          </Link>
         </div>
-        {profileImageSection()}
-      </div>
-    </div>
-  </section>
-);
+      </MaxWidth>
+      <Leafs />
+    </Fragment>
+  );
+};
 
 export default Intro;

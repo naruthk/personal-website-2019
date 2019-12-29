@@ -1,44 +1,11 @@
-$theme-colors: (
-  primary: $purple,
-  secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800,
-) !default;
+$breakpoint-sm: 540px;
+$breakpoint-md: 640px;
+$breakpoint-lg: 710px;
+$breakpoint-xl: 780px;
 
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-$enable-rounded: true !default;
-$enable-shadows: true !default;
-$enable-gradients: false !default;
-$enable-transitions: false !default;
-$enable-hover-media-query: false !default;
-$enable-grid-classes: true !default;
-$enable-print-styles: true !default;
+$global-page-line-height: 1.2;
+$global-font-size: 16px;
 
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  sm: 540px,
-  md: 640px,
-  lg: 710px,
-  xl: 780px,
-) !default;
-
-// Body
-//
-// Settings for the `<body>` element.
-
-$body-bg: $white !default;
-$body-color: $gray-700 !default;
-$inverse-bg: $gray-900 !default;
-$inverse-color: $gray-600 !default;
-
-$link-decoration: none !default;
-$link-hover-decoration: none !default;
+$paragraph-font-size: $global-font-size;
+$paragraph-line-height: 1.8;
+$paragraph-font-weight: 400;

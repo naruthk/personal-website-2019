@@ -1,39 +1,90 @@
-.hover-wrapper {
-  overflow: hidden
-}
+@import '../../scss/colors.scss';
 
-.hover-wrapper img {
-  transition: .3s ease;
-  transform: scale(1.1)
-}
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 710px,
+  xl: 780px,
+) !default;
 
-.hover-wrapper:hover img {
-  transform: scale(2)
-}
+.Projects {
+  &__container {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 2;
 
-.hover-wrapper:hover .hover-overlay {
-  opacity: 1;
-  visibility: visible
-}
+    &--vibrant {
+      &:nth-child(odd) {
+        background: $mouse-selection-background-color;
+      }
+    }
+    
+    &--box-shadow {
+      box-shadow: 0 1.5rem 5rem $light-shadow-black;
+    }
 
-.hover-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .2);
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s ease
-}
+    &__title {
+      font-weight: 600;
+      margin: 2em 0;
+    }
 
-.hover-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center
+    &__content {
+      background-color: $white;
+
+      &__item {
+        &__overview {
+          padding: 1rem !important;
+          
+          &:hover {
+            h2 {
+              color: $light-green;
+            }
+          }
+
+          @media (min-width: 600px) {
+            padding: 3rem !important;
+          }
+
+          h2 {
+            margin-bottom: 0.7em;
+          }
+
+          h3 {
+            font-weight: 400;
+          }
+        }
+        &__thumbnail {
+          img {
+            display: block;
+            margin: 0 auto;
+            max-height: 300px;
+          }
+          @media (min-width: 800px) {
+            img {
+              max-height: 50vh;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__labels {
+      margin: 2.5em 0 1em 0;
+    }
+
+    &__label {
+      text-transform: uppercase;
+
+      &--bold {
+        font-weight: bolder;
+      }
+
+      &--split {
+        margin-right: 20px;
+        display: inline-block;
+        font-weight: 300;
+      }
+    }
+  }
 }

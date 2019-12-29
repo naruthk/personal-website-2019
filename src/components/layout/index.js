@@ -1,40 +1,24 @@
-import React from 'react';
-import emergence from 'emergence.js';
+import React, { Fragment } from 'react';
 
-import Header from 'components/header';
-import Contact from 'components/contact';
+import Social from 'components/social';
 import Footer from 'components/footer';
 
 import 'modern-normalize/modern-normalize.css';
 import 'prismjs/themes/prism.css';
-import 'scss/global.scss';
 import 'animate.css/animate.css';
 import 'font-awesome/css/font-awesome.css';
+import 'scss/global.scss';
 
-import { globalInfo } from '../../globalInfo';
+const Layout = props => {
+  const { children, social } = props;
 
-class Layout extends React.Component {
-  componentDidMount() {
-    emergence.init();
-  }
-
-  componentDidUpdate() {
-    emergence.init();
-  }
-
-  render() {
-    const { children, hideContactFormSection } = this.props;
-    const hideContactSection = hideContactFormSection || false;
-    const { siteName } = globalInfo;
-    return (
-      <div>
-        {/* <Header siteName={siteName} /> */}
-        {children}
-        {!hideContactSection && <Contact />}
-        <Footer />
-      </div>
-    );
-  }
-}
+  return (
+    <Fragment>
+      {children}
+      <Footer />
+      <Social links={social} />
+    </Fragment>
+  );
+};
 
 export default Layout;

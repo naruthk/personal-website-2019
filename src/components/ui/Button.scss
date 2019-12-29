@@ -1,0 +1,57 @@
+@import '../../scss/colors.scss';
+@import '../../scss/constants.scss';
+
+.Button {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  display: inline-block;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 20px 10px 10px 0;
+  }
+
+  &--box-shadow {
+    box-shadow: 0 14px 49px rgba(0,0,0,.07);
+  }
+
+  &--primary {
+    color: $white;
+    background: $button-primary-color;
+    border: 2px solid $button-primary-color;
+  }
+
+  &--secondary {
+    color: $white;
+    background: $button-secondary-color;
+    border: 2px solid $button-secondary-color;
+  }
+
+  &--primary:hover, --secondary:hover {
+    color: $black;
+    background: $button-hover-color;
+    border: 2px solid $button-hover-color;
+  }
+
+  &--size-normal {
+    font-size: 1em;
+    padding: 0.5em 1em;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 1.1em 3em;
+    }
+  }
+
+  &--size-xl {
+    font-size: 1.35em;
+    padding: 0.5em 1em;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 1.1em 3em;
+    }
+  }
+
+  &--shape-rounded {
+    border-radius: 5px;
+  }
+}
