@@ -1,51 +1,35 @@
 export const globalInfo = {
-  siteName: 'Naruth Kongurai',
-  heroTitle: "Hi! I'm Naruth,<br/>a Full Stack Web Developer",
-  introText:
-    "I'm a full stack website developer specializing in building web apps that are super awesome for customers ❤️ and carefully developed with passion and care 🤹‍♂️.",
-  currentCompany: 'True Digital Group',
-  social: [
-    {
-      icon: 'twitter',
-      url: 'https://www.twitter.com/naruthkongurai',
-    },
-    {
-      icon: 'github',
-      url: 'https://www.github.com/naruthk',
-    },
-    {
-      icon: 'linkedin',
-      url: 'https://www.linkedin.com/in/naruthkongurai',
-    },
-  ],
+  global: {
+    siteName: 'Naruth Kongurai',
+    mailTo: 'nkongurai@gmail.com',
+  },
+  introduction: {
+    hero: "I'm Naruth Kongurai.<br />I create things for the web.",
+    description:
+      "I'm a full stack website developer specializing in building web apps that are super awesome for customers ❤️ and carefully developed with passion and care 🤹‍♂️.",
+  },
   services: [
     {
       title: 'Creating powerful back-end systems',
       content:
-        'Express.js for running Node.js. Integration with Google services (Cloud Platform, Firebase), Amazon Web Services',
+        'I use the help of Express.js with integration of Google services (Cloud Platform, Firebase) and/or Amazon Web Services.',
       isFeatured: false,
       icons: ['node', 'php', 'aws', 'docker'],
     },
     {
       title: 'Crafting awesome front-end apps',
       content:
-        'Next.js / Gatsby.js / Wordpress. Prefer using React with ES6 and Prettier set up. Google Analytics & Tag Manager, Cloudinary (image optimization)',
+        'My past experience working with Next.js and Gatsby.js can help to create beautiful web apps with Google Analytics and image optimization in mind (Cloudinary)',
       isFeatured: true,
       icons: ['react', 'js', 'html5', 'wordpress'],
     },
     {
-      title: 'Designing low- & high-fidelity prototypes',
+      title: 'Designing low and high-fidelity prototypes',
       content:
-        'Sketch, InVision, Figma, Adobe XD, and Zeplin (because we all know how awesome Zeplin is)',
+        'At my current workplace, Zeplin is used alongside well-known apps like Sketch, InVision, Figma, and Adobe XD that we have ve all come to love!',
       isFeatured: false,
       icons: ['figma', 'invision'],
     },
-    // {
-    //   title: 'Other areas of involvements and experience',
-    //   content:
-    //     'Practicing Agile (SCRUM) methodology, creating functional specific documentation, researching the web for inspiration and knowledge',
-    //   isFeatured: false,
-    // },
   ],
   skills: [
     {
@@ -71,7 +55,7 @@ export const globalInfo = {
   ],
   full_time_experiences: [
     {
-      duration: 'Jun 2019 - Present ',
+      duration: 'Jun 2019 - Present',
       position: 'Web Developer',
       companyName: 'True Digital Group',
       location: 'Bangkok, Thailand',

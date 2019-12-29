@@ -1,0 +1,16 @@
+@import '../../scss//colors.scss';
+
+.Companies {
+  &__company-thumbnail {
+    height: 100px !important;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    margin: 10px 0 30px 0;
+
+    &--footnote {
+      font-weight: 300;
+    }
+  }
+}

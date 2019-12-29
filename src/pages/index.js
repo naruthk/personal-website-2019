@@ -7,28 +7,27 @@ import Meta from 'components/meta';
 import Intro from 'components/intro';
 import Services from 'components/services';
 import Skills from 'components/skills';
-import Experience from 'components/experience';
+import Companies from 'components/companies';
 import Projects from 'components/projects';
 
 import { globalInfo } from '../globalInfo';
 
 const {
-  introText,
+  global,
+  introduction,
   services,
-  skills,
-  full_time_experiences: fullTime,
+  full_time_experiences: companies,
   internship_experiences: internships,
   projects,
 } = globalInfo;
 
-const Home = ({ data, location }) => (
-  <Layout location={location}>
+const Home = ({ data }) => (
+  <Layout>
     <Meta site={get(data, 'site.meta')} />
-    <Intro subheading={introText} />
+    <Intro introduction={{ ...introduction, ...global }} />
     <Projects projects={projects} />
+    <Companies companies={companies} internships={internships} />
     <Services services={services} />
-    <Skills skills={skills} />
-    {/* <Experience fullTime={fullTime} internships={internships} /> */}
   </Layout>
 );
 

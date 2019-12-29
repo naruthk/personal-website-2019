@@ -10,7 +10,6 @@ const Projects = props => {
   const { projects } = props;
   return (
     <MaxWidth className="Projects__container">
-      <h2 className="Projects__container__title">Projects</h2>
       <div className="Projects__container__content">
         {projects.map(displaySpecificProject)}
       </div>
@@ -50,7 +49,10 @@ const displaySpecificProject = project => {
                 </p>
                 <p className="Projects__container__label">
                   {technologies.map(technology => (
-                    <span className="Projects__container__label--split">
+                    <span
+                      key={technology}
+                      className="Projects__container__label--split"
+                    >
                       {technology}
                     </span>
                   ))}

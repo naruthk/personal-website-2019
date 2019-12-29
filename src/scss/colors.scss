@@ -5,7 +5,11 @@ $white: #fff;
 $light-aqua: #cce6fc;
 $aqua: #03a9f4;
 $light-yellow: #fff6da;
+$yellow: #fdd001;
 $black: #000;
+
+// Shadow Scaling
+$light-shadow-black: rgba(0,0,0,.15);
 
 // FONTS
 $font-color: $gray !default;
@@ -24,3 +28,4 @@ $mouse-selection-text-color: $black !default;
 // BUTTONS
 $button-primary-color: $aqua;
 $button-secondary-color: $light-green;
+$button-hover-color: $yellow;

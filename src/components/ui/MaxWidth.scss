@@ -1,15 +1,16 @@
-.max-width {
-  position: relative
-}
+.MaxWidth {
+  position: relative;
 
-@media (min-width: 767px) {
-  .max-width {
+  &__page-title {
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 767px) {
     padding: 3em 1em 1em 9em;
   }
-}
 
-@media (max-width: 600px) {
-  .max-width {
+  @media (max-width: 600px) {
     padding: 1.3em 0;
     overflow: hidden
   }

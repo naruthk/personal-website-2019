@@ -20,7 +20,7 @@ $container-max-widths: (
     }
     
     &--box-shadow {
-      box-shadow: 0 1.5rem 5rem rgba(0,0,0,.15);
+      box-shadow: 0 1.5rem 5rem $light-shadow-black;
     }
 
     &__title {
@@ -29,6 +29,8 @@ $container-max-widths: (
     }
 
     &__content {
+      background-color: $white;
+
       &__item {
         &__overview {
           padding: 1rem !important;
@@ -46,6 +48,7 @@ $container-max-widths: (
           h2 {
             margin-bottom: 0.7em;
           }
+
           h3 {
             font-weight: 400;
           }

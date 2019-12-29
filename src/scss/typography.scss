@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './constants.scss';
 
 @font-face {
   font-family: bwnistaint-xbd;
@@ -17,18 +18,18 @@
 
 body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.2;
-  font-size: 16px;
+  line-height: $global-page-line-height;
+  font-size: $global-font-size;
   -webkit-font-smoothing: antialiased;
   color: $font-color;
 }
 
 p {
-  font-weight: 400;
-  font-size: 16px;
+  font-family: Oxygen, sans-serif;
+  font-weight: $paragraph-font-weight;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
   color: $font-color;
-  line-height: 1.8;
-  font-family: Oxygen, sans-serif
 }
 
 h1,
@@ -38,17 +39,17 @@ h4,
 h5,
 h6 {
   color: $heading-color;
-  line-height: 1.2;
-  position: relative;
-  z-index: 2;
+  line-height: $global-page-line-height;
 }
 
 h1 {
   font-size: 4em;
 }
+
 h2 {
   font-size: 2.5em;
 }
+
 h3 {
   font-size: 1.8em;
 }
@@ -63,6 +64,19 @@ h3 {
   h3 {
     font-size: 1.2em;
     line-height: 1.5em;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  h1 {
+    font-size: 2em
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+    line-height: 1.4em;
   }
 }
 
