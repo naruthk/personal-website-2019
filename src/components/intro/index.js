@@ -13,7 +13,7 @@ const Intro = props => {
   return (
     <Fragment>
       <MaxWidth className="Intro">
-        <h2 className="Intro__greeting">Hello! 🚀</h2>
+        <h2 className="Intro__greeting">Hello!</h2>
         <h1
           className="Intro__heading"
           dangerouslySetInnerHTML={{ __html: hero }}
