@@ -6,7 +6,7 @@ export const globalInfo = {
   introduction: {
     hero: "I'm Naruth Kongurai.<br />I create things for the web.",
     description:
-      "I'm a full stack website developer specializing in building web apps that are super awesome for customers ❤️ and carefully developed with passion and care 🤹‍♂️.",
+      "I'm a full stack website developer specializing in building web apps that are super awesome for customers and carefully developed with passion and care.",
   },
   services: [
     {
